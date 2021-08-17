@@ -20,12 +20,17 @@ def base_converter(dec_num, base):
 
 #method to display output
 def verify(b,c):
-    if c is not 2 or 8 or 16:     
-        return print("Incorect base")
-    a = base_converter(b,c)
-    print(f"{b} to base 10 is {a} to base {c}")
+    if (c ==2 or c ==8 or c==16):
+        a = base_converter(b,c)
+        return print(f"{b} to base 10 is {a} to base {c}")
+    else:
+         return print("Incorect base")
 
+#Examples to verify        
 verify(15,19)
+verify(333,16)
+verify(15,8)
+verify(201,2)
         
 
         
